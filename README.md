@@ -12,13 +12,15 @@ These designs showcase how modern big data ecosystems integrate technologies suc
 ├── README.md
 ├── Netflix-datapipeline-AWS (using Amazon AWS)
 │   ├── README.md
-│   ├── Mockups
-      Hadoop Datapipeline Ecommerce
-├── ecommerce-recommendation-datapipeline (using Hadoop)
+├── Ecommerce-recommedation-pipeline (using Hadoop)
 │   ├── README.md
-│   ├── Mockups
-      Mockup Amazon AWS
-
+├── Images
+│   ├──  Mockups
+│       ├──  Mockup Amazon AWS.png
+│       ├── Hadoop Datapipeline Ecommerce.jpg
+│   ├──  Final
+│       ├──  Amazon.png
+│       ├── Hadoop.png
 ```
 # Project Objectives
 
