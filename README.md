@@ -6,6 +6,20 @@ The architectures illustrate how raw data flows through different layers of a da
 
 These designs showcase how modern big data ecosystems integrate technologies such as Hadoop, Spark, Kafka, Flink, and AWS cloud services to build robust and scalable data pipelines.
 
+# Project Structure
+```text
+03-ai-perception-infographic-analysis
+├── README.md
+├── Netflix-datapipeline-AWS (using Amazon AWS)
+│   ├── README.md
+│   ├── Mockups
+      Hadoop Datapipeline Ecommerce
+├── ecommerce-recommendation-datapipeline (using Hadoop)
+│   ├── README.md
+│   ├── Mockups
+      Mockup Amazon AWS
+
+```
 # Project Objectives
 
 The goal of this repository is to demonstrate knowledge of:
