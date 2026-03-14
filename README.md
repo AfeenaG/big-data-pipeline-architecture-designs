@@ -8,7 +8,7 @@ These designs showcase how modern big data ecosystems integrate technologies suc
 
 # Project Structure
 ```text
-03-ai-perception-infographic-analysis
+ai-perception-infographic-analysis
 ├── README.md
 ├── Netflix-datapipeline-AWS (using Amazon AWS)
 │   ├── README.md
