@@ -1,4 +1,4 @@
-**Big Data Architecture Design for Industries**
+# Big Data Architecture Design for Industries
 
 This repository presents enterprise-scale big data architecture designs for real-world industry use cases. The purpose of this project is to demonstrate an understanding of how modern organizations build scalable, distributed data platforms capable of processing large volumes of data in both batch and real-time environments.
 
@@ -6,7 +6,7 @@ The architectures illustrate how raw data flows through different layers of a da
 
 These designs showcase how modern big data ecosystems integrate technologies such as Hadoop, Spark, Kafka, Flink, and AWS cloud services to build robust and scalable data pipelines.
 
-**Project Objectives**
+# Project Objectives
 
 The goal of this repository is to demonstrate knowledge of:
 
@@ -26,11 +26,11 @@ The goal of this repository is to demonstrate knowledge of:
 
 The architecture diagrams included in this repository reflect common industry patterns used by large-scale technology platforms.
 
-**Big Data Architecture Layers**
+# Big Data Architecture Layers
 
 Each architecture design in this project follows a layered data pipeline model used in enterprise data platforms.
 
-**Data Sources**
+# Data Sources
 
 Data originates from multiple operational systems and user interactions.
 
@@ -50,13 +50,13 @@ Data Ingestion Layer
 
 The ingestion layer is responsible for collecting and transporting data into the data platform. This layer supports both real-time streaming ingestion and batch ingestion workflows.
 
-**Technologies commonly used:**
+# Technologies commonly used:
 
 - Apache Kafka
 
 - Amazon Kinesis
 
-**Storage Layer**
+# Storage Layer
 
 The storage layer persists both raw and processed data in distributed storage systems. These systems are designed to handle large volumes of structured and unstructured data.
 
@@ -72,7 +72,7 @@ Examples include:
 
 - Data warehouses
 
-**Technologies used in these architectures:**
+# Technologies used in these architectures: 
 
 - Hive
 
@@ -82,7 +82,7 @@ Examples include:
 
 - Amazon Redshift
 
-**Data Processing Layer**
+# Data Processing Layer
 
 The processing layer performs large-scale distributed data transformations. This layer supports:
 
@@ -92,7 +92,7 @@ The processing layer performs large-scale distributed data transformations. This
 
 - Aggregations
 
-**Feature engineering**
+# Feature engineering 
 
 - Real-time event processing
 
@@ -106,7 +106,7 @@ The processing layer performs large-scale distributed data transformations. This
 
 - Amazon EMR
 
-**Machine Learning Layer**
+# Machine Learning Layer 
 
 Machine learning models leverage processed data to generate predictions and insights. These models power applications such as:
 
@@ -139,3 +139,9 @@ Examples include:
 Technology demonstrated:
 
 - Amazon QuickSight
+
+# Project Links for Amazon AWS and Hadoop Technologies
+
+https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/Netflix-datapipeline-AWS
+https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/ecommerce-recommendation-pipeline
+
