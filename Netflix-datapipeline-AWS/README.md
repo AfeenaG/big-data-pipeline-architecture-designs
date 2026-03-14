@@ -1,11 +1,11 @@
-**Netflix-Style Streaming Data Platform (AWS)**
+# Netflix-Style Streaming Data Platform (AWS)
 
 This architecture represents a cloud-native data pipeline for a large-scale media streaming platform. The design demonstrates how cloud services can be used to build a scalable data platform for analytics and machine learning.
 
-**Data Pipeline Architecture (Amazon AWS)**
+# Data Pipeline Architecture (Amazon AWS)
 ![Amazon AWS Architecture Diagram](../images/final/Amazon.png)
 
-**Technologies Used**
+# Technologies Used
 
 **_Data Ingestion_**
 
