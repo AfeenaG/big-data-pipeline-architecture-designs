@@ -7,7 +7,7 @@ This architecture represents a scalable big data pipeline designed to support **
 The architecture combines **stream processing and batch processing** to support both real-time insights and historical analytics.
 
 # Data pipeline Architecture
-![Spark Architecture Diagram](images/Final/Hadoop.png)
+![Spark Architecture Diagram](Images/Final/Hadoop.png)
 ---
 
 # Architecture Components
