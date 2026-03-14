@@ -8,7 +8,22 @@ The architecture combines **stream processing and batch processing** to support 
 
 # Data Pipeline Architecture
 ![Spark Architecture Diagram](../images/final/Hadoop.png)
----
+
+# Design Decisions
+The proposed architecture separates transactional processing, real-time analytics, and data warehousing into distinct layers.
+The web application interacts directly with an RDBMS, which functions as the OLTP system. This database manages transactional operations such as orders, inventory updates, and product information. The RDBMS ensures ACID compliance and supports day-to-day operational workflows.
+Simultaneously, user interactions generate clickstream data, which is captured and published to Apache Kafka. Kafka acts as the streaming ingestion layer, enabling fault-tolerant event collection. We did not choose flume in the event Flink stops working flume does not have the capacity to hold the data. Social media feedback is also ingested as an additional event stream through Kafka and processed in real time using Flink.
+For real-time analytics, clickstream events are processed using Apache Flink. Flink performs event-time processing and computes behavioral insights such as related product recommendations. The computed recommendations are written to a serving database- Apache HBase, which provides low-latency key-based lookups. The web application queries this serving layer to instantly return similar items (e.g., other red shoes) when a user performs a search. This design avoids sending recommendation results back to the RDBMS, thereby preventing transactional bottlenecks.
+For historical analytics and reporting, both transactional data from the RDBMS and processed clickstream data are stored in Apache Hadoop HDFS in Parquet format. Batch ETL from the RDBMS is performed using Apache Spark, ensuring efficient large-scale transformations.
+The analytical layer is implemented using Apache Hive, which provides SQL-based querying over the Parquet datasets stored in HDFS. Business intelligence tools connect to Hive to generate dashboards, reports, and long-term trend analysis.
+By separating the architecture into:
+•	OLTP (RDBMS),
+•	Real-time streaming (Kafka + Flink),
+•	Serving layer (HBase),
+•	Data warehouse storage (HDFS),
+•	Analytics layer (Hive),
+the system ensures low-latency recommendations for users while also supporting scalable historical analytics and reporting.
+
 
 # Architecture Components
 
@@ -106,7 +121,7 @@ HBase is used for:
 
 Typical workloads include:
 
-- user behavior analysis
+- user behaviour analysis
 - product affinity analysis
 - feature engineering
 - training recommendation models
