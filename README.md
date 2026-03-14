@@ -124,7 +124,7 @@ Technologies demonstrated:
 
 - Amazon SageMaker
 
-**Analytics and Visualization Layer**
+# Analytics and Visualization Layer
 
 The analytics layer enables business teams and analysts to access insights through reporting and visualization tools.
 
@@ -143,5 +143,6 @@ Technology demonstrated:
 # Project Links for Amazon AWS and Hadoop Technologies
 
 https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/Netflix-datapipeline-AWS
+
 https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/ecommerce-recommendation-pipeline
 
