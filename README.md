@@ -6,6 +6,12 @@ The architectures illustrate how raw data flows through different layers of a da
 
 These designs showcase how modern big data ecosystems integrate technologies such as Hadoop, Spark, Kafka, Flink, and AWS cloud services to build robust and scalable data pipelines.
 
+# Project Links for Amazon AWS and Hadoop Technologies
+
+https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/Netflix-datapipeline-AWS
+
+https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/ecommerce-recommendation-pipeline
+
 # Project Structure
 ```text
 ai-perception-infographic-analysis
@@ -156,9 +162,5 @@ Technology demonstrated:
 
 - Amazon QuickSight
 
-# Project Links for Amazon AWS and Hadoop Technologies
 
-https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/Netflix-datapipeline-AWS
-
-https://github.com/AfeenaG/big-data-pipeline-architecture-designs/tree/main/ecommerce-recommendation-pipeline
 
