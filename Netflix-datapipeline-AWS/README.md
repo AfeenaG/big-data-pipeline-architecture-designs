@@ -1,10 +1,3 @@
-# Netflix-Style Streaming Data Platform (AWS)
-
-This architecture represents a cloud-native data pipeline for a large-scale media streaming platform. The design demonstrates how cloud services can be used to build a scalable data platform for analytics and machine learning.
-
-# Data Pipeline Architecture (Amazon AWS)
-![Amazon AWS Architecture Diagram](../images/final/Netflix_AWS.png)
-
 ## Introduction
 Netflix is one of the leading digital streaming platforms in the world with millions of subscribers across many countries. Unlike traditional media companies, Netflix relies heavily on data to operate its platform. Every action on Netflix such as searching for a movie, clicking on a title, pausing a video or watching a show, generates a large amount of user data. This data helps Netflix understand viewer behavior and preferences more accurately. It is also widely known that Netflix operates its streaming infrastructure using cloud services from Amazon Web Services (AWS) which enables the platform to process and manage large volumes of data efficiently.
 
@@ -40,8 +33,7 @@ Support for Personalization Netflix uses Contextual Bandits (a machine learning 
 
 ## Netflix System Architecture Diagram
 
-
-
+![Amazon AWS Architecture Diagram](../images/final/Netflix_AWS.png)
 
 ## Architectural Design Decisions
 Amazon Kinesis (Ingestion Layer): Used for high-speed streaming (Amazon Web Services, n.d.). Captures the data from various sources: logs, clickstreams, user events 
