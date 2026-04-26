@@ -23,10 +23,15 @@ For historical analytics and reporting, both transactional data from the RDBMS a
 The analytical layer is implemented using Apache Hive, which provides SQL-based querying over the Parquet datasets stored in HDFS. Business intelligence tools connect to Hive to generate dashboards, reports, and long-term trend analysis.
 
 By separating the architecture into:
-•	OLTP (RDBMS),
-•	Real-time streaming (Kafka + Flink),
-•	Serving layer (HBase),
-•	Data warehouse storage (HDFS),
+
+•	OLTP (RDBMS)
+
+•	Real-time streaming (Kafka + Flink)
+
+•	Serving layer (HBase)
+
+•	Data warehouse storage (HDFS)
+
 •	Analytics layer (Hive)
 
 the system ensures low-latency recommendations for users while also supporting scalable historical analytics and reporting.
