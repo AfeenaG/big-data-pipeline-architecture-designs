@@ -71,12 +71,16 @@ There are five fundamental characteristics of Big Data: Volume, Velocity, Variet
 Volume
 
 Netflix processes extremely large amounts of data on a daily basis. Every interaction in the platform represents new information that must be stored and analyzed. Every user will be performing continuous activity, representing thousands of terabytes. Amazon S3 is a cloud based storage solution that can act as a platform capable of storing these massive amounts of raw data. Its architecture serves as a data lake that will allow Netflix to store structured, semi-structured and non-structured data. Data can then be accessed using other Amazon features, like Amazon Athena, which is capable of running standard SQL queries for structured and semi-structured data. 
+
 ## Velocity
 Refers to the speed at which data will be generated and processed. Amazon offers Amazon Kinesis, a tool whose infrastructure, scaling and maintenance is completely handled by AWS, and that is capable of enabling real-time data ingestion that captures information from user devices, and allows Netflix to generate accurate and updated recommendations. It can be integrated with other AWS tools such as S3 for long term storage, and it can scale from megabytes to terabytes of data to accommodate high user traffic. 
+
 ## Variety 
 Netflix’s platform generates structured, semi-structured and unstructured data. Structured data includes the user id, subscription details, session information and ratings. Unstructured data includes activity logs, search queries, and clickstreams generated from user interactions. Managing these different types of data requires flexible storage and processing tools. Netflix can address this challenge by using Amazon S3 as a centralized storage lake, and AWS Glue and EMR for processing and transforming the data for analytics and machine learning. 
+
 ## Veracity
 Veracity refers to the reliability and accuracy of the data used for analysis. In big platforms like Netflix, there may be occasions where data has inconsistencies/noise caused by user interruptions and network issues. To ensure data integrity, Netflix can implement ETL pipelines with services like AWS Glue to clean, validate, and transform datasets to be loaded and be ready for accurate analysis. 
+
 ## Value
 The ultimate goal of keeping large amounts of raw data, is to generate meaningful insights that guide the company towards making good decisions and improve user experience. Netflix can accomplish this by using some of the tools from the proposed architecture. 
 
