@@ -106,6 +106,13 @@ Our architecture is designed not just as a collection of tools, but as a cohesiv
 ## Individual Component Analysis
 This table breaks down how each AWS service contributes to our three core pillars: Scalability, Fault Tolerance, and Data Protection.
 
+| Feature | Scalability | Fault Tolerance | Data Protection |
+| :--- | :--- | :--- | :--- |
+| **Amazon Kinesis** | Uses shards to scale throughput; operates in on-demand mode for automatic scaling. | Data is replicated across 3 Availability Zones (AZs) automatically to prevent loss. | Supports server-side encryption and private VPC endpoints. |
+| **Amazon S3** | Offers unlimited storage capacity; scales automatically to handle high request rates. | Designed for 99.999999999% durability by storing data across multiple locations. | Supports versioning, MFA delete, and AES-256 (KMS) encryption. |
+| **Amazon RDS** | Scales horizontally using 3-5 Read Replicas to offload "Read" traffic from the primary DB. | Uses Multi-AZ deployments for synchronous replication and automatic failover in <60s. | Supports versioning, MFA delete, and AES-256 (KMS) encryption. |
+| **Amazon EMR** | Can resize clusters dynamically based on the workload (e.g., peak processing hours). | If a node fails, EMR automatically replaces it without losing data progress. | Supports Kerberos authentication and encryption for distributed data. |
+
 ## Architectural Level Analysis
 Beyond individual tools, the synergy between these components provides high-level system resilience:
 
