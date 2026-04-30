@@ -116,6 +116,13 @@ This table breaks down how each AWS service contributes to our three core pillar
 ## Architectural Level Analysis
 Beyond individual tools, the synergy between these components provides high-level system resilience:
 
+•	Decoupling with Buffers: By using Kinesis and S3 as staging areas (buffers), the system becomes highly resilient. For instance, if the EMR cluster fails during processing, the raw clickstream data remains safe at the source. This decoupling ensures that a failure in downstream processing does not lead to permanent data loss (Amazon Web Services [AWS], 2024).
+
+•	S3 as the Single Source of Truth: Our architecture treats S3 as a persistent data lake. This allows for clear Data Lineage. If a transformation in the database fails or if business logic needs updating, we can re-process the raw data from S3 without affecting the production environment (Vajgel & Murthy, 2022).
+
+•	Integrated Security and Failover: By combining RDS Multi-AZ and Encryption at Rest (KMS), we ensure that the system is not only always online but also compliant with data privacy regulations like GDPR. Even during a complete data center outage, the automated failover mechanisms guarantee continuity with zero data loss (Hoffman, 2023).
+
+
 
 
 ## Contributors:
@@ -125,5 +132,5 @@ Swe Mar Aye (Introduction & Conclusion)
 
 Daniel Perez (Addressing the Challenges of the 5Vs & Machine Learning Technique)
 
-Sai Nay Lin (Ensuring Scalability, Fault Tolerance, Data Security)
+Sai Nay Lin (Ensuring Scalability, Fault Tolerance, Data Security): Provided guidance to Sai on splitting it across individual component analysis and architectural level analysis
 
